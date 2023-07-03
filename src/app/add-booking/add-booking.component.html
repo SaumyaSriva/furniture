@@ -1,0 +1,50 @@
+<div class="card">
+  <div class="card-header text-white" style="background-color: #00AA9E;">
+      {{pageTitle}}
+  </div>
+  <div class="card-body">
+      <!-- <div class="table-responsive"> -->
+        <div class="card-text">
+          <form [formGroup]="addBooking" (ngSubmit)="saveData()">
+            <label><b>Tracking Id</b> </label><br>
+            <input type="text" required formControlName="trackingId"><br><br>
+          
+            <label><b>Email</b></label><br>
+            <input type="email" required formControlName="email"><br><br>
+
+            <label><b>Name</b></label><br>
+            <input text="name" required formControlName="name"><br><br>
+
+            <label><b>Booking Date</b></label><br>
+            <input type="date" required formControlName="date"><br><br>
+
+            <label><b>Contact</b></label><br>
+            <input type="number" required formControlName="contact"><br>
+
+            <label><b>Status</b></label><br>
+            
+            <input type="radio" name="status" value="Shipped" required formControlName="status">
+
+            <label>Shipped</label><br>
+
+            <input type="radio" name="status" value="Transit" required formControlName="status">
+
+            <label>Transit</label><br>
+
+            <input type="radio" name="status" value="Out for delivery" required formControlName="status">
+
+            <label>Out for delivery</label><br><br>
+
+
+            <label><b>Address</b></label><br>
+            <input type="text" required formControlName="address"><br><br>
+            
+            <label><b>User's list of product</b></label><br>
+            <input type="text" required formControlName="listProducts"><br>
+
+            <button>SUBMIT style="background-color: #00AA9E;"</button>
+            <!-- <button class="card-header text-white" (click)="OnAdd()">Submit</button> -->
+          </form>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,24 @@
+[
+  {
+    "TrackingID": "T1",
+    "OrderDetails": "order1",
+    "Email":"order1@gmail.com",
+    "Address": "Brookefield,Bengaluru",
+    "contactNumber": 1234,
+    "listOfProduct": "products1",
+    "status": "shipped",
+    "DeliveryPartnerID": "DP1",
+    "DeliveryBoyContactNumber": 51234
+  },
+  {
+    "TrackingID": "T2",
+    "OrderDetails": "order2",
+    "Email":"order2@gmail.com",
+    "Address": "Tin factory,Bengaluru",
+    "contactNumber": 1235,
+    "listOfProduct": "products2",
+    "status": "Out for delivery",
+    "DeliveryPartnerID": "DP2",
+    "DeliveryBoyContactNumber": 51235
+  }
+]

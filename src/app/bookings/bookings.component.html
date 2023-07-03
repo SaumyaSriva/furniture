@@ -1,0 +1,59 @@
+<div class="card">
+  <div class="card-header text-white" style="background-color: #00AA9E;">
+      {{pageTitle}}
+  </div>
+  <div class="card-body">
+      <!-- <div class="row">
+          <div class="col-md-2">
+              Filter By:
+          </div>
+          <div class="col-md-4">
+              <input type="text" [(ngModel)]="listFilter">
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-md-6">
+              <h4>Filtered by: {{listFilter}}</h4>
+          </div>
+      </div> -->
+      <div class="table-responsive">
+          <table class="table">
+              <thead>
+                  <tr>
+                      <!-- <th>
+                          <button class="btn btn-primary" (click)="toggleButton()">
+                              {{showImage?"Hide" : "Show"}} Image
+                          </button>
+                      </th> -->
+                      <th>Tracking Id</th>
+                      <th>User's Email ID</th>
+                      <th>Name</th>
+                      <th>Booking Date</th>
+                      <th>Contact</th>
+                      <th>Status</th>
+                      <th>Address</th>
+
+                  </tr>
+              </thead>
+              <tbody>
+                  <tr *ngFor="let b of booking">
+                      <!-- <td><img *ngIf="showImage" [src]="product.imageUrl" [title]="product.productName"
+                          [alt]="product.productName" [style.width.px]="imgwidth" [style.margin.px]="imgmargin"></td> -->
+                      <!-- <td><a [routerLink]="['/products',product.productId]">{{product.productName | uppercase}}</a></td> -->
+                      <td>{{b.userid}}</td>
+                      <td>{{b.id}}</td>
+                      <td>{{b.name}}</td>
+                      <td>{{b.bookingDate}}</td>
+                      <td>{{b.contact}}</td>
+                      <td>{{b.status}}</td>
+                      <td>{{b.address}}</td>
+                      
+                      <!-- <td>{{booking.price | currency:'USD':'symbol':'1.3-4'}}</td> -->
+                      <!-- <td><app-star [rating]="product.starRating" (ratingClicked)="onRatingClicked($event)"></app-star></td> -->
+                  </tr>
+
+              </tbody>
+          </table>
+      </div>
+  </div>
+</div>
